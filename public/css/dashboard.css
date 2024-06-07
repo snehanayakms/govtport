@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #0f0e0e;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.carousel {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+#seva-form {
+    margin-top: 20px;
+}
+
+#message {
+    margin-top: 10px;
+    font-weight: bold;
+}

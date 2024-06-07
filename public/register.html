@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+                <h1 class="text-center">Register</h1>
+                <form action="/register" method="post">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="text" class="form-control" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Password:</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Gender:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" id="male" value="male" checked>
+                            <label class="form-check-label" for="male">Male</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                            <label class="form-check-label" for="female">Female</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" id="other" value="other">
+                            <label class="form-check-label" for="other">Other</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="state">State:</label>
+                        <select class="form-control" id="state" name="state">
+                            <option value="" selected disabled>Select State</option>
+                            <!-- Add recommendations for states -->
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Gujrat">Gujrat</option>
+                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                            <option value="Maharashta">Maharashta</option>
+
+                            <!-- Add more states here -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City:</label>
+                        <select class="form-control" id="city" name="city">
+                            <option value="" selected disabled>Select City</option>
+                            <!-- Add recommendations for cities -->
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Bangalore">Bangalore</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Cochin">Cochin</option>
+                            <option value="Gandhi nagar">Gandhi nagar</option>
+                            <option value="Lucknow">Lucknow</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <!-- Add more cities here -->
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

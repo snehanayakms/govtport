@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                Government Portal
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sevas">Sevas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNcA10EWmiWfbzz0xiLj8vkOuWKaSHoduOSNNsyjFBTeOLAFds298icfC77K1atw94Qm8&usqp=CAU" class="d-block w-100" alt="Banner 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNcA10EWmiWfbzz0xiLj8vkOuWKaSHoduOSNNsyjFBTeOLAFds298icfC77K1atw94Qm8&usqp=CAU" class="d-block w-100" alt="Banner 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNcA10EWmiWfbzz0xiLj8vkOuWKaSHoduOSNNsyjFBTeOLAFds298icfC77K1atw94Qm8&usqp=CAU" class="d-block w-100" alt="Banner 3">
+            </div>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Thank You</h2>
+                    <p>For choosing our website. Now you can go through all the available services.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/600x400" class="img-fluid" alt="About Us Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Sevas Section -->
+<section id="sevas" class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Sevas</h2>
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Seva Name</th>
+                            <th>Description</th>
+                            <th>Apply Now</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Scholarship</td>
+                            <td>For backward class students</td>
+                            <td><button class="btn btn-primary apply-btn" data-seva="Seva 1">Apply Now</button></td>
+                        </tr>
+                        <tr>
+                            <td>Pension</td>
+                            <td>For senior citizens</td>
+                            <td><button class="btn btn-primary apply-btn" data-seva="Seva 2">Apply Now</button></td>
+                        </tr>
+                        <tr>
+                            <td>Pension</td>
+                            <td>For widows</td>
+                            <td><button class="btn btn-primary apply-btn" data-seva="Seva 2">Apply Now</button></td>
+                        </tr>
+                        <tr>
+                            <td>Shakthi Yojana</td>
+                            <td>For women of Karnataka</td>
+                            <td><button class="btn btn-primary apply-btn" data-seva="Seva 2">Apply Now</button></td>
+                        </tr>
+                        <tr>
+                            <td>Gruha Jyothi Yojana</td>
+                            <td>To every household in Karnataka</td>
+                            <td><button class="btn btn-primary apply-btn" data-seva="Seva 2">Apply Now</button></td>
+                        </tr>
+                        <tr>
+                            <td>Thrichakra yojana  </td>
+                            <td>For Handicapped people</td>
+                            <td><button class="btn btn-primary apply-btn" data-seva="Seva 2">Apply Now</button></td>
+                        </tr>
+                        <tr>
+                            <td>Agricultural Infrastructure fund</td>
+                            <td>For farmers</td>
+                            <td><button class="btn btn-primary apply-btn" data-seva="Seva 2">Apply Now</button></td>
+                        </tr>
+                        <!-- Add more rows for additional sevas -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Thank You Section -->
+<section id="thankyou" class="py-5" style="display: none;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 text-center">
+                <h2>Thank You!</h2>
+                <p>Your application for will be processed. Fill the below information</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Bootstrap JS and jQuery (optional) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Handler for applying for a seva
+        $('.apply-btn').click(function () {
+            var sevaName = $(this).data('seva');
+            // You can perform AJAX call here to store the seva data in the database
+            // For demonstration purposes, let's just show a thank you message
+            $('#applied-seva').text(sevaName);
+            $('#sevas').hide();
+            $('#thankyou').show();
+        });
+    });
+</script>
+
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">INFORMATION</h2>
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Government Portal</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and jQuery (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
